@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://dstnvymq6clh1" path="res://assets/Tiny Swords (Update 010)/Terrain/Water/Water.png" id="4_ismcg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sy0k8"]
+resource_name = "Flat"
 texture = ExtResource("1_w1uo6")
 texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
@@ -172,6 +173,7 @@ texture_region_size = Vector2i(64, 64)
 9:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0uces"]
+resource_name = "Elevation"
 texture = ExtResource("2_7ajdl")
 texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
@@ -276,9 +278,27 @@ texture_region_size = Vector2i(64, 64)
 3:5/0 = 0
 3:5/0/terrain_set = 0
 0:7/0 = 0
+0:7/0/terrain_set = 0
+0:7/0/terrain = 4
+0:7/0/terrains_peering_bit/right_side = 4
+0:7/0/terrains_peering_bit/bottom_side = 4
+0:7/0/terrains_peering_bit/top_side = 4
 1:7/0 = 0
+1:7/0/terrain_set = 0
+1:7/0/terrain = 4
+1:7/0/terrains_peering_bit/right_side = 4
+1:7/0/terrains_peering_bit/bottom_side = 4
+1:7/0/terrains_peering_bit/left_side = 4
+1:7/0/terrains_peering_bit/top_side = 4
 2:7/0 = 0
+2:7/0/terrain_set = 0
+2:7/0/terrain = 4
+2:7/0/terrains_peering_bit/bottom_side = 4
+2:7/0/terrains_peering_bit/left_side = 4
+2:7/0/terrains_peering_bit/top_side = 4
 3:7/0 = 0
+3:7/0/terrain_set = 0
+3:7/0/terrain = 4
 3:2/0 = 0
 3:2/0/terrain_set = 0
 3:2/0/terrain = 2
@@ -290,6 +310,7 @@ texture_region_size = Vector2i(64, 64)
 0:2/0/terrains_peering_bit/top_side = 2
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y7ave"]
+resource_name = "Bridge"
 texture = ExtResource("3_28r2f")
 texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
@@ -310,6 +331,7 @@ texture_region_size = Vector2i(64, 64)
 2:3/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_26ku6"]
+resource_name = "Water"
 texture = ExtResource("4_ismcg")
 texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
@@ -325,6 +347,8 @@ terrain_set_0/terrain_2/name = "Stone"
 terrain_set_0/terrain_2/color = Color(0.65, 0.65, 0.65, 1)
 terrain_set_0/terrain_3/name = "Cliff"
 terrain_set_0/terrain_3/color = Color(0.33, 0.33, 0.33, 1)
+terrain_set_0/terrain_4/name = "Stairs"
+terrain_set_0/terrain_4/color = Color(0.75, 0.75, 0.75, 1)
 sources/1 = SubResource("TileSetAtlasSource_0uces")
 sources/2 = SubResource("TileSetAtlasSource_y7ave")
 sources/0 = SubResource("TileSetAtlasSource_sy0k8")
